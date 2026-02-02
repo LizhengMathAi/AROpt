@@ -1,0 +1,428 @@
+weather_96_96_iTransformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.1606256067752838, mae:0.21028392016887665
+prediction length: 192, mse:0.20370711386203766, mae:0.25006282329559326
+prediction length: 288, mse:0.2359885573387146, mae:0.2758258283138275
+prediction length: 384, mse:0.2621372938156128, mae:0.29414990544319153
+prediction length: 480, mse:0.2840142548084259, mae:0.3084374666213989
+prediction length: 576, mse:0.3036312460899353, mae:0.32042354345321655
+prediction length: 672, mse:0.3221096098423004, mae:0.3320028781890869
+prediction length: 768, mse:0.338738352060318, mae:0.3425583839416504
+prediction length: 864, mse:0.3542150557041168, mae:0.35216188430786133
+prediction length: 960, mse:0.36806514859199524, mae:0.3605656623840332
+prediction length: 1056, mse:0.3808870017528534, mae:0.36781758069992065
+prediction length: 1152, mse:0.39333340525627136, mae:0.374525785446167
+prediction length: 1248, mse:0.4059172570705414, mae:0.3815866708755493
+prediction length: 1344, mse:0.41800037026405334, mae:0.38846075534820557
+prediction length: 1440, mse:0.429608553647995, mae:0.3947966396808624
+
+
+weather_96_96_iInformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.1476474553346634, mae:0.20128601789474487
+prediction length: 192, mse:0.19011494517326355, mae:0.24214032292366028
+prediction length: 288, mse:0.22276794910430908, mae:0.26864445209503174
+prediction length: 384, mse:0.2487511932849884, mae:0.2869558334350586
+prediction length: 480, mse:0.27040693163871765, mae:0.30122870206832886
+prediction length: 576, mse:0.28960472345352173, mae:0.31297415494918823
+prediction length: 672, mse:0.3072413504123688, mae:0.32403305172920227
+prediction length: 768, mse:0.3229648470878601, mae:0.33397966623306274
+prediction length: 864, mse:0.33716249465942383, mae:0.34272485971450806
+prediction length: 960, mse:0.3499656617641449, mae:0.35051292181015015
+prediction length: 1056, mse:0.36162179708480835, mae:0.35708826780319214
+prediction length: 1152, mse:0.3726683259010315, mae:0.3630148470401764
+prediction length: 1248, mse:0.38384485244750977, mae:0.36926040053367615
+prediction length: 1344, mse:0.39477217197418213, mae:0.37540149688720703
+prediction length: 1440, mse:0.4050890803337097, mae:0.38104671239852905
+
+
+weather_96_96_iFlowformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.16195568442344666, mae:0.2116946280002594
+prediction length: 192, mse:0.2033538818359375, mae:0.2501767873764038
+prediction length: 288, mse:0.23420803248882294, mae:0.2745644450187683
+prediction length: 384, mse:0.25977838039398193, mae:0.2927433252334595
+prediction length: 480, mse:0.2811921536922455, mae:0.30683019757270813
+prediction length: 576, mse:0.30022886395454407, mae:0.3183456063270569
+prediction length: 672, mse:0.31792503595352173, mae:0.32967033982276917
+prediction length: 768, mse:0.33383870124816895, mae:0.3399765193462372
+prediction length: 864, mse:0.34845203161239624, mae:0.3491612672805786
+prediction length: 960, mse:0.36168545484542847, mae:0.3572922646999359
+prediction length: 1056, mse:0.3737732768058777, mae:0.36424484848976135
+prediction length: 1152, mse:0.38544130325317383, mae:0.37062546610832214
+prediction length: 1248, mse:0.397134006023407, mae:0.377289742231369
+prediction length: 1344, mse:0.40840986371040344, mae:0.3837840259075165
+prediction length: 1440, mse:0.419026255607605, mae:0.3896462023258209
+
+
+weather_96_96_iFlashformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.1620742827653885, mae:0.2126769721508026
+prediction length: 192, mse:0.20382919907569885, mae:0.25085902214050293
+prediction length: 288, mse:0.23541507124900818, mae:0.2759222686290741
+prediction length: 384, mse:0.2609577476978302, mae:0.293973445892334
+prediction length: 480, mse:0.2818082273006439, mae:0.3074477016925812
+prediction length: 576, mse:0.30071786046028137, mae:0.3189188539981842
+prediction length: 672, mse:0.3182896673679352, mae:0.33000585436820984
+prediction length: 768, mse:0.33377140760421753, mae:0.3397429883480072
+prediction length: 864, mse:0.3482540547847748, mae:0.3487294614315033
+prediction length: 960, mse:0.3612968623638153, mae:0.3565748333930969
+prediction length: 1056, mse:0.3729532063007355, mae:0.36305591464042664
+prediction length: 1152, mse:0.3843326270580292, mae:0.3692215383052826
+prediction length: 1248, mse:0.3957767188549042, mae:0.3756864666938782
+prediction length: 1344, mse:0.40662556886672974, mae:0.38175535202026367
+prediction length: 1440, mse:0.41703924536705017, mae:0.3873487412929535
+
+
+weather_96_192_iTransformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.20473317801952362, mae:0.2513834238052368
+prediction length: 384, mse:0.2610373795032501, mae:0.29500049352645874
+prediction length: 576, mse:0.3019854724407196, mae:0.32105401158332825
+prediction length: 768, mse:0.335614413022995, mae:0.3426467776298523
+prediction length: 960, mse:0.3636441230773926, mae:0.35964781045913696
+prediction length: 1152, mse:0.38594141602516174, mae:0.37199321389198303
+prediction length: 1344, mse:0.40733447670936584, mae:0.38415610790252686
+
+
+weather_96_192_iInformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.19423918426036835, mae:0.24617455899715424
+prediction length: 384, mse:0.25158244371414185, mae:0.29012754559516907
+prediction length: 576, mse:0.2930326461791992, mae:0.3167189955711365
+prediction length: 768, mse:0.3261742889881134, mae:0.33795666694641113
+prediction length: 960, mse:0.35296523571014404, mae:0.3539813160896301
+prediction length: 1152, mse:0.373995304107666, mae:0.36563652753829956
+prediction length: 1344, mse:0.3943445384502411, mae:0.3773631751537323
+
+
+weather_96_192_iFlowformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.20453031361103058, mae:0.25142404437065125
+prediction length: 384, mse:0.26184597611427307, mae:0.29473260045051575
+prediction length: 576, mse:0.30115771293640137, mae:0.31996074318885803
+prediction length: 768, mse:0.3332732319831848, mae:0.3406158983707428
+prediction length: 960, mse:0.3597925305366516, mae:0.35657116770744324
+prediction length: 1152, mse:0.3804544508457184, mae:0.3678560256958008
+prediction length: 1344, mse:0.40023374557495117, mae:0.3789658844470978
+
+
+weather_96_192_iFlashformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.20267854630947113, mae:0.24869073927402496
+prediction length: 384, mse:0.2596082389354706, mae:0.29298627376556396
+prediction length: 576, mse:0.3005748391151428, mae:0.3194313645362854
+prediction length: 768, mse:0.3346043825149536, mae:0.34116968512535095
+prediction length: 960, mse:0.36305075883865356, mae:0.35836905241012573
+prediction length: 1152, mse:0.3853658139705658, mae:0.37054240703582764
+prediction length: 1344, mse:0.40686479210853577, mae:0.3826659321784973
+
+
+weather_96_336_iTransformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.25177520513534546, mae:0.2869509160518646
+prediction length: 672, mse:0.3207584023475647, mae:0.3316611051559448
+prediction length: 1008, mse:0.3691171109676361, mae:0.3611138164997101
+prediction length: 1344, mse:0.4051888585090637, mae:0.3813568651676178
+
+
+weather_96_336_iInformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.2468411773443222, mae:0.2866654694080353
+prediction length: 672, mse:0.31881770491600037, mae:0.33282020688056946
+prediction length: 1008, mse:0.3644157648086548, mae:0.36018744111061096
+prediction length: 1344, mse:0.39855965971946716, mae:0.37879490852355957
+
+
+weather_96_336_iFlowformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.24942010641098022, mae:0.2854960560798645
+prediction length: 672, mse:0.3177482783794403, mae:0.3301708400249481
+prediction length: 1008, mse:0.3659229576587677, mae:0.35991987586021423
+prediction length: 1344, mse:0.4026833772659302, mae:0.3807651996612549
+
+
+weather_96_336_iFlashformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.2505137324333191, mae:0.2870132029056549
+prediction length: 672, mse:0.31959426403045654, mae:0.3322790861129761
+prediction length: 1008, mse:0.3678445518016815, mae:0.3618800938129425
+prediction length: 1344, mse:0.40429261326789856, mae:0.38215240836143494
+
+
+weather_96_720_iTransformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.3295796811580658, mae:0.33716773986816406
+prediction length: 1440, mse:0.41645941138267517, mae:0.38765421509742737
+
+
+weather_96_720_iInformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.3268522620201111, mae:0.3388451933860779
+prediction length: 1440, mse:0.41152313351631165, mae:0.3874664604663849
+
+
+weather_96_720_iFlowformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.32511216402053833, mae:0.33528292179107666
+prediction length: 1440, mse:0.41143137216567993, mae:0.3855005204677582
+
+
+weather_96_720_iFlashformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.32842087745666504, mae:0.33722156286239624
+prediction length: 1440, mse:0.4144273102283478, mae:0.386813759803772
+
+
+electricity_96_96_iTransformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.14150448143482208, mae:0.23944738507270813
+prediction length: 192, mse:0.16301347315311432, mae:0.26012560725212097
+prediction length: 288, mse:0.1803198605775833, mae:0.27641063928604126
+prediction length: 384, mse:0.19430109858512878, mae:0.2888835668563843
+prediction length: 480, mse:0.20598265528678894, mae:0.29892072081565857
+prediction length: 576, mse:0.21707989275455475, mae:0.3079480230808258
+prediction length: 672, mse:0.2274750918149948, mae:0.3162085711956024
+prediction length: 768, mse:0.23896750807762146, mae:0.32499250769615173
+prediction length: 864, mse:0.24989746510982513, mae:0.3331720530986786
+prediction length: 960, mse:0.26204514503479004, mae:0.34191277623176575
+prediction length: 1056, mse:0.27455011010169983, mae:0.3507513105869293
+prediction length: 1152, mse:0.28681039810180664, mae:0.3593912720680237
+prediction length: 1248, mse:0.29947105050086975, mae:0.3681492209434509
+prediction length: 1344, mse:0.3127368092536926, mae:0.3770359456539154
+prediction length: 1440, mse:0.3271610140800476, mae:0.3863552212715149
+
+
+electricity_96_96_iInformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.1318429559469223, mae:0.2323138266801834
+prediction length: 192, mse:0.15409664809703827, mae:0.2540986239910126
+prediction length: 288, mse:0.1705780327320099, mae:0.2701050043106079
+prediction length: 384, mse:0.18410441279411316, mae:0.28256529569625854
+prediction length: 480, mse:0.19600361585617065, mae:0.29305437207221985
+prediction length: 576, mse:0.20687592029571533, mae:0.30237382650375366
+prediction length: 672, mse:0.217792809009552, mae:0.311367928981781
+prediction length: 768, mse:0.22978395223617554, mae:0.3209078311920166
+prediction length: 864, mse:0.24218782782554626, mae:0.3304259479045868
+prediction length: 960, mse:0.25666147470474243, mae:0.3409963548183441
+prediction length: 1056, mse:0.272634893655777, mae:0.35213181376457214
+prediction length: 1152, mse:0.2901259958744049, mae:0.36375537514686584
+prediction length: 1248, mse:0.3097994923591614, mae:0.37604638934135437
+prediction length: 1344, mse:0.33304792642593384, mae:0.3891269862651825
+prediction length: 1440, mse:0.3617016673088074, mae:0.4030420482158661
+
+
+electricity_96_96_iFlowformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.1416817158460617, mae:0.2414795607328415
+prediction length: 192, mse:0.16793681681156158, mae:0.2665083408355713
+prediction length: 288, mse:0.18941649794578552, mae:0.2859661877155304
+prediction length: 384, mse:0.20744526386260986, mae:0.30138084292411804
+prediction length: 480, mse:0.2227781116962433, mae:0.3139937222003937
+prediction length: 576, mse:0.23713518679141998, mae:0.32512912154197693
+prediction length: 672, mse:0.250017374753952, mae:0.3351084887981415
+prediction length: 768, mse:0.26340824365615845, mae:0.345241904258728
+prediction length: 864, mse:0.27580615878105164, mae:0.35451194643974304
+prediction length: 960, mse:0.28866907954216003, mae:0.363789439201355
+prediction length: 1056, mse:0.3011379837989807, mae:0.3727635145187378
+prediction length: 1152, mse:0.31318333745002747, mae:0.38153523206710815
+prediction length: 1248, mse:0.32604295015335083, mae:0.3906620144844055
+prediction length: 1344, mse:0.3403158485889435, mae:0.4003026485443115
+prediction length: 1440, mse:0.3564869165420532, mae:0.4106524586677551
+
+
+electricity_96_96_iFlashformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk15_0  
+prediction length: 96, mse:0.1425185352563858, mae:0.24169763922691345
+prediction length: 192, mse:0.169157013297081, mae:0.2674192488193512
+prediction length: 288, mse:0.19018463790416718, mae:0.28658995032310486
+prediction length: 384, mse:0.20683330297470093, mae:0.3009323477745056
+prediction length: 480, mse:0.22071300446987152, mae:0.31236645579338074
+prediction length: 576, mse:0.23314537107944489, mae:0.32211580872535706
+prediction length: 672, mse:0.2449609637260437, mae:0.33111611008644104
+prediction length: 768, mse:0.25754842162132263, mae:0.3403582274913788
+prediction length: 864, mse:0.2689652442932129, mae:0.3485144376754761
+prediction length: 960, mse:0.2811243236064911, mae:0.3567844033241272
+prediction length: 1056, mse:0.2934797406196594, mae:0.3650466501712799
+prediction length: 1152, mse:0.30564364790916443, mae:0.3731716573238373
+prediction length: 1248, mse:0.3181931674480438, mae:0.3814226984977722
+prediction length: 1344, mse:0.3317092955112457, mae:0.3900214433670044
+prediction length: 1440, mse:0.34685155749320984, mae:0.39927148818969727
+
+
+electricity_96_192_iTransformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.1610785275697708, mae:0.25884294509887695
+prediction length: 384, mse:0.1899271309375763, mae:0.2854987680912018
+prediction length: 576, mse:0.21105368435382843, mae:0.30322685837745667
+prediction length: 768, mse:0.23074178397655487, mae:0.3187185227870941
+prediction length: 960, mse:0.2502743899822235, mae:0.333139032125473
+prediction length: 1152, mse:0.2691251337528229, mae:0.34660613536834717
+prediction length: 1344, mse:0.28893157839775085, mae:0.3602806031703949
+
+
+electricity_96_192_iInformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.16132886707782745, mae:0.2626786530017853
+prediction length: 384, mse:0.1911502182483673, mae:0.2904649078845978
+prediction length: 576, mse:0.2132389396429062, mae:0.3088958263397217
+prediction length: 768, mse:0.23098967969417572, mae:0.32259050011634827
+prediction length: 960, mse:0.2467842698097229, mae:0.33393412828445435
+prediction length: 1152, mse:0.26233360171318054, mae:0.3448803424835205
+prediction length: 1344, mse:0.27978718280792236, mae:0.35658732056617737
+
+
+electricity_96_192_iFlowformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.15817122161388397, mae:0.2564786672592163
+prediction length: 384, mse:0.18660968542099, mae:0.28255778551101685
+prediction length: 576, mse:0.20637966692447662, mae:0.2987329661846161
+prediction length: 768, mse:0.22380249202251434, mae:0.31228703260421753
+prediction length: 960, mse:0.24105426669120789, mae:0.32500457763671875
+prediction length: 1152, mse:0.25835224986076355, mae:0.33735713362693787
+prediction length: 1344, mse:0.27735844254493713, mae:0.3503980040550232
+
+
+electricity_96_192_iFlashformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk7_0  
+prediction length: 192, mse:0.1628057062625885, mae:0.2611207067966461
+prediction length: 384, mse:0.19505569338798523, mae:0.29061758518218994
+prediction length: 576, mse:0.2183120846748352, mae:0.30938753485679626
+prediction length: 768, mse:0.23961712419986725, mae:0.3252674639225006
+prediction length: 960, mse:0.2582293152809143, mae:0.33848485350608826
+prediction length: 1152, mse:0.27389007806777954, mae:0.349676251411438
+prediction length: 1344, mse:0.29075080156326294, mae:0.36132916808128357
+
+
+electricity_96_336_iTransformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.17748183012008667, mae:0.27559125423431396
+prediction length: 672, mse:0.20973943173885345, mae:0.3024677634239197
+prediction length: 1008, mse:0.23935727775096893, mae:0.32418712973594666
+prediction length: 1344, mse:0.26691678166389465, mae:0.3436341881752014
+
+
+electricity_96_336_iInformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.1877511739730835, mae:0.2884756922721863
+prediction length: 672, mse:0.23053820431232452, mae:0.3233342468738556
+prediction length: 1008, mse:0.25863292813301086, mae:0.34325990080833435
+prediction length: 1344, mse:0.28292563557624817, mae:0.3594796061515808
+
+
+electricity_96_336_iFlowformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.17824657261371613, mae:0.2768145203590393
+prediction length: 672, mse:0.21361908316612244, mae:0.30640509724617004
+prediction length: 1008, mse:0.2418379932641983, mae:0.3269880712032318
+prediction length: 1344, mse:0.26654887199401855, mae:0.344136118888855
+
+
+electricity_96_336_iFlashformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 336, mse:0.18409129977226257, mae:0.28236663341522217
+prediction length: 672, mse:0.22108402848243713, mae:0.31223928928375244
+prediction length: 1008, mse:0.25479844212532043, mae:0.33560967445373535
+prediction length: 1344, mse:0.28083959221839905, mae:0.35315659642219543
+
+
+electricity_96_720_iTransformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.20799948275089264, mae:0.30059269070625305
+prediction length: 1440, mse:0.2566913962364197, mae:0.3344736099243164
+
+
+electricity_96_720_iInformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.20308224856853485, mae:0.29695621132850647
+prediction length: 1440, mse:0.2614605128765106, mae:0.34018370509147644
+
+
+electricity_96_720_iFlowformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.2103145569562912, mae:0.3031978905200958
+prediction length: 1440, mse:0.25502127408981323, mae:0.3351120352745056
+
+
+electricity_96_720_iFlashformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 720, mse:0.22279240190982819, mae:0.3142942190170288
+prediction length: 1440, mse:0.2699103057384491, mae:0.34714463353157043
+
+
+traffic_96_96_iTransformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk8_0  
+prediction length: 96, mse:0.39989882707595825, mae:0.2672758102416992
+prediction length: 192, mse:0.41436463594436646, mae:0.2778439521789551
+prediction length: 288, mse:0.42889758944511414, mae:0.2886832654476166
+prediction length: 384, mse:0.44064459204673767, mae:0.2983289062976837
+prediction length: 480, mse:0.45186489820480347, mae:0.3076547086238861
+prediction length: 576, mse:0.4666943848133087, mae:0.31807318329811096
+prediction length: 672, mse:0.47977501153945923, mae:0.3278590738773346
+prediction length: 768, mse:0.496996134519577, mae:0.33888691663742065
+
+
+traffic_96_96_iInformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk8_0  
+prediction length: 96, mse:0.39452970027923584, mae:0.26210713386535645
+prediction length: 192, mse:0.4128378629684448, mae:0.27443215250968933
+prediction length: 288, mse:0.429353266954422, mae:0.2866170406341553
+prediction length: 384, mse:0.4427791237831116, mae:0.2977358102798462
+prediction length: 480, mse:0.4551854133605957, mae:0.30838778614997864
+prediction length: 576, mse:0.47074076533317566, mae:0.3199341595172882
+prediction length: 672, mse:0.48433738946914673, mae:0.33074450492858887
+prediction length: 768, mse:0.5026174783706665, mae:0.3430343270301819
+
+
+traffic_96_96_iFlowformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk8_0  
+prediction length: 96, mse:0.3849585950374603, mae:0.25931623578071594
+prediction length: 192, mse:0.40388748049736023, mae:0.27148884534835815
+prediction length: 288, mse:0.41985687613487244, mae:0.2828352153301239
+prediction length: 384, mse:0.43350860476493835, mae:0.2931478023529053
+prediction length: 480, mse:0.4462883174419403, mae:0.303048700094223
+prediction length: 576, mse:0.4617181718349457, mae:0.31377288699150085
+prediction length: 672, mse:0.4750490188598633, mae:0.3237359821796417
+prediction length: 768, mse:0.49239882826805115, mae:0.3349430561065674
+
+
+traffic_96_96_iFlashformer_custom_M_ft96_sl48_ll96_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk8_0  
+prediction length: 96, mse:0.38578128814697266, mae:0.2567337453365326
+prediction length: 192, mse:0.3987857401371002, mae:0.2674141824245453
+prediction length: 288, mse:0.4095618426799774, mae:0.2757468819618225
+prediction length: 384, mse:0.41919511556625366, mae:0.2830014228820801
+prediction length: 480, mse:0.42781588435173035, mae:0.2896357476711273
+prediction length: 576, mse:0.43903735280036926, mae:0.29696306586265564
+prediction length: 672, mse:0.44804295897483826, mae:0.30355748534202576
+prediction length: 768, mse:0.4578797519207001, mae:0.3104749023914337
+
+
+traffic_96_192_iTransformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 192, mse:0.41309723258018494, mae:0.2744969427585602
+prediction length: 384, mse:0.4364943504333496, mae:0.29012730717658997
+prediction length: 576, mse:0.457163006067276, mae:0.3045353293418884
+prediction length: 768, mse:0.47915616631507874, mae:0.31951379776000977
+
+
+traffic_96_192_iInformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 192, mse:0.40813857316970825, mae:0.2691049873828888
+prediction length: 384, mse:0.43367406725883484, mae:0.2856186330318451
+prediction length: 576, mse:0.4555271863937378, mae:0.30059024691581726
+prediction length: 768, mse:0.4784303903579712, mae:0.31608834862709045
+
+
+traffic_96_192_iFlowformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 192, mse:0.4027133285999298, mae:0.2695985436439514
+prediction length: 384, mse:0.42651471495628357, mae:0.28527188301086426
+prediction length: 576, mse:0.4480525851249695, mae:0.2995603680610657
+prediction length: 768, mse:0.47117146849632263, mae:0.31425321102142334
+
+
+traffic_96_192_iFlashformer_custom_M_ft96_sl48_ll192_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk4_0  
+prediction length: 192, mse:0.3939928412437439, mae:0.26678675413131714
+prediction length: 384, mse:0.4111456573009491, mae:0.27843916416168213
+prediction length: 576, mse:0.42645949125289917, mae:0.28807705640792847
+prediction length: 768, mse:0.44102445244789124, mae:0.29732024669647217
+
+
+traffic_96_336_iTransformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 336, mse:0.42754483222961426, mae:0.28242355585098267
+prediction length: 672, mse:0.46370282769203186, mae:0.30434343218803406
+
+
+traffic_96_336_iInformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 336, mse:0.4240178167819977, mae:0.278842568397522
+prediction length: 672, mse:0.4625295102596283, mae:0.3023858070373535
+
+
+traffic_96_336_iFlowformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 336, mse:0.41850000619888306, mae:0.2779175639152527
+prediction length: 672, mse:0.4561786353588104, mae:0.30012956261634827
+
+
+traffic_96_336_iFlashformer_custom_M_ft96_sl48_ll336_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk2_0  
+prediction length: 336, mse:0.39623135328292847, mae:0.2704048156738281
+prediction length: 672, mse:0.4214860498905182, mae:0.28584206104278564
+
+
+traffic_96_720_iTransformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl512_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk1_0  
+prediction length: 720, mse:0.46658238768577576, mae:0.30538490414619446
+
+
+traffic_96_720_iInformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk1_0  
+prediction length: 720, mse:0.4652913808822632, mae:0.3002249300479889
+
+
+traffic_96_720_iFlowformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df1_fctimeF_ebTrue_dtExp_projection_trk4_tsk1_0  
+prediction length: 720, mse:0.4582674205303192, mae:0.30052313208580017
+
+
+traffic_96_720_iFlashformer_custom_M_ft96_sl48_ll720_pl512_dm8_nh2_el1_dl2048_df3_fctimeF_ebTrue_dtExp_projection_trk4_tsk1_0  
+prediction length: 720, mse:0.4218701124191284, mae:0.28575053811073303
+
+
