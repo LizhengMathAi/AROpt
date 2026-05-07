@@ -115,27 +115,7 @@ def cal_accuracy(y_pred, y_true):
     return np.mean(y_pred == y_true)
 
 
-# -------- for sequential policy gradient --------------
-def training_time_augmentation(batch_x, batch_x_mark, batch_y, batch_y_mark, n_repeats=1, scale_factor=0.01):
-    """
-    Augment training data for sequential policy gradient
-    :param batch_x: input value, shape (B, seq_len, N)
-    :param batch_x_mark: input time stamp, shape (B, seq_len, N')
-    :param batch_y: groundtruth value, shape (B, label_len + training_k * pred_len, N)
-    :param batch_y_mark: groundtruth time stamp, shape (B, label_len + training_k * pred_len, N')
-    :param n_repeats: repeat times for augmentation
-    :param scale_factor: scale factor for noise
-    :return: augmented batch_x, batch_x_mark, batch_y, batch_y_mark
-    """
-    batch_x, batch_x_mark = batch_x.repeat(n_repeats, 1, 1), batch_x_mark.repeat(n_repeats, 1, 1)
-    batch_y, batch_y_mark = batch_y.repeat(n_repeats, 1, 1), batch_y_mark.repeat(n_repeats, 1, 1)
-    scale = scale_factor * (batch_x.max(dim=1, keepdim=True)[0] - batch_x.min(dim=1, keepdim=True)[0] + 1e-6)
-    batch_x = batch_x + scale * torch.clamp(torch.randn_like(batch_x), -1, 1)  # set 0.607/0.510/0.389 for 90/95/99% probability 
-
-    return batch_x, batch_x_mark, batch_y, batch_y_mark
-
-
-def autoregressive_forcast(model, outputs, batch_y_mark, f_dim, num_ar, args):
+def autoregressive_forcast(model, outputs, batch_y, batch_y_mark, f_dim, num_ar, args):
     """
     generate multi-step ahead forecast
     :param model: the iTransformer/iInformer/iFlowformer/iFlashformer model
@@ -143,16 +123,24 @@ def autoregressive_forcast(model, outputs, batch_y_mark, f_dim, num_ar, args):
     """
     seq_outputs = [outputs[:, -args.pred_len:, f_dim:]]
     for k in range(1, num_ar):
+        # decoder input
+        dec_inp = batch_y[:, args.label_len+k*args.pred_len-args.seq_len:args.label_len+(k+1)*args.pred_len-args.seq_len, :]
+        dec_inp = torch.cat([dec_inp[:, :args.label_len, :], torch.zeros_like(dec_inp[:, -args.pred_len:, :]).float()], dim=1).float().to(outputs.device)
+
         if args.output_attention:
             next_output = model(
                 seq_outputs[-1][:, -args.seq_len:, :].detach(), 
                 None if batch_y_mark is None else batch_y_mark[:, args.label_len+k*args.pred_len-args.seq_len:args.label_len+k*args.pred_len, :], 
-                None, None)[0]
+                dec_inp, 
+                None if batch_y_mark is None else batch_y_mark[:, k*args.pred_len:args.label_len+k*args.pred_len+args.pred_len, :],
+            )[0]
         else:
             next_output = model(
                 seq_outputs[-1][:, -args.seq_len:, :].detach(), 
                 None if batch_y_mark is None else batch_y_mark[:, args.label_len+k*args.pred_len-args.seq_len:args.label_len+k*args.pred_len, :], 
-                None, None)
+                dec_inp, 
+                None if batch_y_mark is None else batch_y_mark[:, k*args.pred_len:args.label_len+k*args.pred_len+args.pred_len, :],
+            )
         seq_outputs.append(next_output[:, -args.pred_len:, f_dim:])
 
     return seq_outputs
@@ -167,7 +155,7 @@ def autoregressive_criterion(model, outputs, batch_y, batch_y_mark, f_dim, args)
     criterion = lambda pred, true: torch.square(pred - true).mean()
 
     num_ar = args.training_k
-    seq_outputs = autoregressive_forcast(model, outputs, batch_y_mark, f_dim, num_ar, args)
+    seq_outputs = autoregressive_forcast(model, outputs, batch_y, batch_y_mark, f_dim, num_ar, args)
     seq_batch_y = [batch_y[:, args.label_len+k*args.pred_len:args.label_len+(k+1)*args.pred_len, :] for k in range(num_ar)]
 
     loss = criterion(seq_outputs[0], seq_batch_y[0])

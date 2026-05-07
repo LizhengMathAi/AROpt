@@ -127,18 +127,18 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 if self.args.use_amp:
                     with torch.amp.autocast("cuda"):
                         if self.args.output_attention:
-                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
+                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])[0]
                         else:
-                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
+                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])
                         # NOTE: using autoregressive training pipeline
                         loss = autoregressive_criterion(self.model, outputs, batch_y, batch_y_mark, f_dim, self.args)
 
                         train_loss.append(loss.item())
                 else:
                     if self.args.output_attention:
-                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
+                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])[0]
                     else:
-                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
+                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])
                     # NOTE: using autoregressive training pipeline
                     loss = autoregressive_criterion(self.model, outputs, batch_y, batch_y_mark, f_dim, self.args)
 
@@ -215,18 +215,18 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 if self.args.use_amp:
                     with torch.amp.autocast("cuda"):
                         if self.args.output_attention:
-                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
+                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])[0]
                         else:
-                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
+                            outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])
                         # NOTE: using autoregressive pipeline
-                        seq_outputs = autoregressive_forcast(self.model, outputs, batch_y_mark, f_dim, num_ar=self.args.test_k, args=self.args)
+                        seq_outputs = autoregressive_forcast(self.model, outputs, batch_y, batch_y_mark, f_dim, num_ar=self.args.test_k, args=self.args)
                 else:
                     if self.args.output_attention:
-                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
+                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])[0]
                     else:
-                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
+                        outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark[:, :dec_inp.shape[1], :])
                     # NOTE: using autoregressive pipeline
-                    seq_outputs = autoregressive_forcast(self.model, outputs, batch_y_mark, f_dim, num_ar=self.args.test_k, args=self.args)
+                    seq_outputs = autoregressive_forcast(self.model, outputs, batch_y, batch_y_mark, f_dim, num_ar=self.args.test_k, args=self.args)
 
                 if self.args.test_k > 1:
                     outputs = torch.cat([out[:, -self.args.pred_len:, f_dim:] for out in seq_outputs], dim=1)
