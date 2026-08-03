@@ -99,6 +99,30 @@ Install the Time Series Library (TSLib)
    pip install -r requirements.txt
    ```
 
+### Project Structure
+
+```text
+.
+├── dataset
+│   ├── electricity/
+│   ├── ETT-small/
+│   ├── exchange_rate/
+│   ├── PEMS/
+│   ├── Solar/
+│   ├── traffic/
+│   └── weather/
+├── experiments/
+├── figures/
+├── layers/
+├── model/
+├── utils/
+├── run.py
+├── electricity.sh
+├── traffic.sh
+├── weather.sh
+└── random_seed_results.sh
+```
+
 ## Usage Examples
 
 Run experiments on the Weather dataset with various models and prediction lengths:
@@ -194,6 +218,18 @@ do
       --itr 1
 done
 ```
+
+
+
+## Random Seed Evaluation
+Comment out the following lines in run.py to fix the random seed for reproducibility in experiments:
+```python
+# fix_seed = 2023
+# random.seed(fix_seed)
+# torch.manual_seed(fix_seed)
+# np.random.seed(fix_seed)
+```
+Then run `bash random_seed_results.sh 2>&1 | tee random_seed_results.log`.
 
 ## License
 
